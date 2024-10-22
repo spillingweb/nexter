@@ -1,0 +1,20 @@
+@use "../../generalStyles.scss" as *;
+
+.feature {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 2.5rem;
+
+  &Icon {
+    grid-row: 1 / span 2;
+    height: 4.5rem;
+    width: 4.5rem;
+    fill: $color-primary;
+    transform: translateY(-1rem);
+  }
+}
+
+.text {
+  font-size: 1.7rem;
+}

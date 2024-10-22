@@ -1,0 +1,18 @@
+@use '../../generalStyles.scss' as *;
+
+.button {
+    background-color: $color-primary;
+    border: none;
+    border-radius: 0;
+    padding: 1.8rem 3rem;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-size: 1.5rem;
+    color: $color-grey-light-1;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover {
+        background-color: $color-primary-dark;
+    }
+}

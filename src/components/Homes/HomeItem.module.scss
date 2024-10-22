@@ -1,0 +1,56 @@
+@use "../../generalStyles.scss" as *;
+
+.homeCard {
+  background-color: $color-grey-light-1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+.image {
+  width: 100%;
+}
+
+.like {
+  fill: $color-primary;
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2;
+}
+
+.title {
+  transform: translateY(-50%);
+  align-self: center;
+  width: fit-content;
+  font-family: Josefin Sans;
+  color: $color-grey-light-1;
+  font-weight: 400;
+  font-size: 1.6rem;
+  background-color: $color-secondary;
+  padding: 1rem 2rem;
+}
+
+.features {
+    margin: 2rem;
+    margin-top: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 3.5rem;
+}
+
+.featureItem {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  fill: $color-primary;
+}
